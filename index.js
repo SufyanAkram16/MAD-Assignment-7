@@ -24,26 +24,58 @@
 // var result = str.toLowerCase();
 // console.log(result);
 // 7. Write a ts program to toggle case of each character of a string.
-var str = "HeLLo WoRLd";
-var result = "";
+// var str:string = "HeLLo WoRLd";
+// var result:string = "";
+// for( let i=0; i< str.length; i++) {
+//     let ch = "";
+//     if(str[i] >= "A" && str[i] <= "Z") {
+//         ch = str[i].toLowerCase();
+//         result = result + ch;
+//     } else if (str[i] >= "a" && str[i] <= "z"){
+//         ch = str[i].toUpperCase()
+//         result = result + ch;
+//     }else if (str[i] === " "){
+//         ch = str[i];
+//         result = result + ch;
+//     }
+// }
+// console.log(result)
+// 8. Write a ts program to find total number of alphabets, digits or special character in a string.
+// var str:string = "Hello World 1234545 @.?#";
+// var alphabets:number = 0;
+// var numbers:number = 0;
+// var specialCharacter:number = 0;
+// for( let i=0; i<str.length; i++){
+//     if(str[i] >= "A" && str[i]<= "Z"){
+//         alphabets = alphabets + 1;
+//     } else if ( str[i] >= "a" && str[i] <= "z" ){
+//         alphabets = alphabets + 1;
+//     } else if(str[i] >= "1" && str[i] <= "9"){
+//         numbers += 1;
+//     }else if (str[i] === "0"){
+//         numbers += 1;
+//     }else if(str[i] != " "){
+//         specialCharacter +=1;
+//     }
+// }
+// console.log("Alphabets :" + alphabets)
+// console.log("Numbers:" + numbers)
+// console.log("Special Characters:" + specialCharacter)
+// 9. Write a ts program to count total number of vowels and consonants in a string.
+var str = "My Name Is Sufian Akram. I am a Web Developer";
+var vowels = 0;
+var constants = 0;
 for (var i = 0; i < str.length; i++) {
-    var ch = "";
-    if (str[i] >= "A" && str[i] <= "Z") {
-        ch = str[i].toLowerCase();
-        result = result + ch;
+    var ch = str[i].toUpperCase();
+    if (ch == "A" || ch == "E" || ch == "I" || ch == "O" || ch == "U") {
+        vowels += 1;
     }
-    else if (str[i] >= "a" && str[i] <= "z") {
-        ch = str[i].toUpperCase();
-        result = result + ch;
-    }
-    else if (str[i] === " ") {
-        ch = str[i];
-        result = result + ch;
+    else if (ch != " ") {
+        constants += 1;
     }
 }
-console.log(result);
-// 8. Write a ts program to find total number of alphabets, digits or special character in a string.
-// 9. Write a ts program to count total number of vowels and consonants in a string.
+console.log("Vowels:" + vowels);
+console.log("Constants:" + constants);
 // 10. Write a ts program to count total number of words in a string.
 // 11. Write a ts program to find reverse of a string.
 // 12. Write a ts program to check whether a string is palindrome or not.
