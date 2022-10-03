@@ -24,22 +24,25 @@
 // var result = str.toLowerCase();
 // console.log(result);
 // 7. Write a ts program to toggle case of each character of a string.
-// var str:string = "HeLLo WoRLd";
-// var result:string = "";
-// for( let i=0; i< str.length; i++) {
-//     let ch = "";
-//     if(str[i] >= "A" && str[i] <= "Z") {
-//         ch = str[i].toLowerCase();
-//         result = result + ch;
-//     } else if (str[i] >= "a" && str[i] <= "z"){
-//         ch = str[i].toUpperCase()
-//         result = result + ch;
-//     }else if (str[i] === " "){
-//         ch = str[i];
-//         result = result + ch;
+var str = "HeLLo WoRLd";
+// function toggle (str:string){
+//     var result:string = "";
+//     for( let i=0; i< str.length; i++) {
+//         let ch = "";
+//         if(str[i] >= "A" && str[i] <= "Z") {
+//             ch = str[i].toLowerCase();
+//             result = result + ch;
+//         } else if (str[i] >= "a" && str[i] <= "z"){
+//             ch = str[i].toUpperCase()
+//             result = result + ch;
+//         }else if (str[i] === " "){
+//             ch = str[i];
+//             result = result + ch;
 //     }
 // }
 // console.log(result)
+// }
+// toggle(str);
 // 8. Write a ts program to find total number of alphabets, digits or special character in a string.
 // var str:string = "Hello World 1234545 @.?#";
 // var alphabets:number = 0;
@@ -62,22 +65,41 @@
 // console.log("Numbers:" + numbers)
 // console.log("Special Characters:" + specialCharacter)
 // 9. Write a ts program to count total number of vowels and consonants in a string.
-var str = "My Name Is Sufian Akram. I am a Web Developer";
-var vowels = 0;
-var constants = 0;
-for (var i = 0; i < str.length; i++) {
-    var ch = str[i].toUpperCase();
-    if (ch == "A" || ch == "E" || ch == "I" || ch == "O" || ch == "U") {
-        vowels += 1;
-    }
-    else if (ch != " ") {
-        constants += 1;
-    }
-}
-console.log("Vowels:" + vowels);
-console.log("Constants:" + constants);
+// var str:string = "My Name Is Sufian Akram. I am a Web Developer";
+// var vowels:number = 0;
+// var constants:number = 0;
+// for( let i = 0; i < str.length; i++){
+//     let ch = str[i].toUpperCase();
+//     if(ch == "A" || ch == "E" || ch == "I" || ch == "O" || ch == "U"){
+//         vowels += 1;
+//     }else if(ch != " "){
+//         constants += 1;
+//     }
+// }
+// console.log("Vowels:" + vowels);
+// console.log("Constants:" + constants);
 // 10. Write a ts program to count total number of words in a string.
+// function countWords(str:string) {
+//     let count = 0;
+//     for(let i=0; i<str.length; i++) {
+//         if(str[i] === " "){
+//             count += 1;
+//         }
+//     }
+//     count += 1;
+//     console.log("The number of words in a string is " + count);
+// }
+// countWords("My name is sufian and i am blockchain developer")
 // 11. Write a ts program to find reverse of a string.
+function reverseString(str) {
+    var x = str;
+    var rev = "";
+    for (var i = x.length - 1; i >= 0; i--) {
+        rev = rev + x[i];
+    }
+    console.log(rev);
+}
+reverseString("Naveed");
 // 12. Write a ts program to check whether a string is palindrome or not.
 // 13. Write a ts program to reverse order of words in a given string
 // 14. Write a ts program to find first occurrence of a character in a given string.
