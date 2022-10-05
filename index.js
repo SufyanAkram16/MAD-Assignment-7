@@ -24,7 +24,7 @@
 // var result = str.toLowerCase();
 // console.log(result);
 // 7. Write a ts program to toggle case of each character of a string.
-var str = "HeLLo WoRLd";
+// var str:string = "HeLLo WoRLd";
 // function toggle (str:string){
 //     var result:string = "";
 //     for( let i=0; i< str.length; i++) {
@@ -91,18 +91,45 @@ var str = "HeLLo WoRLd";
 // }
 // countWords("My name is sufian and i am blockchain developer")
 // 11. Write a ts program to find reverse of a string.
-function reverseString(str) {
-    var x = str;
-    var rev = "";
-    for (var i = x.length - 1; i >= 0; i--) {
-        rev = rev + x[i];
-    }
-    console.log(rev);
-}
-reverseString("Naveed");
+// function reverseString(str:string) {
+//     var x:string = str;
+//     var rev:string = "";
+//     for( let i = x.length-1; i>=0; i--){
+//         rev = rev + x[i];
+//     }
+//     console.log(rev);
+// }
+// reverseString("Naveed");
 // 12. Write a ts program to check whether a string is palindrome or not.
-// 13. Write a ts program to reverse order of words in a given string
+// function checkPalindrome(str:string) {
+//     var rev:string = "";
+//     for ( let i = str.length-1; i >= 0; i--){
+//         rev = rev + str[i];
+//     }
+//     if(str === rev){
+//         console.log("The string is palindrome");
+//     }else {
+//         console.log("The string is not palindrome");
+//     }
+// }
+// checkPalindrome("mom")
+// 13. Write a ts program to reverse order of words in a given string.
+// function revOrderWords(str:string) {
+//     return str.split(" ").reverse().join(" "); 
+// }
+// var show:string = revOrderWords("my name is sufian")
+// console.log(show);
 // 14. Write a ts program to find first occurrence of a character in a given string.
+// const checkCharFreq = (str:string, charac:string) => {
+//     let count = 0;
+//     for( let i = 0; i <= str.length; i++){
+//         if( charac === str[i]){
+//             count += 1;
+//         }
+//     }
+//     console.log("The character " + charac + " occurs " + count + " times.")
+// }
+// checkCharFreq("My name is sufian ssssss", "s")
 // 15. Write a ts program to find last occurrence of a character in a given string.
 // 16. Write a ts program to search all occurrences of a character in given string.
 // 17. Write a ts program to count occurrences of a character in given string.
